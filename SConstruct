@@ -71,6 +71,7 @@ if env['SCRATCH']:
 env['UGLIFYJS'] = env.File('#/node_modules/uglify-js/bin/uglifyjs').get_abspath()
 env['CLEANCSS'] = env.File('#/node_modules/clean-css-cli/bin/cleancss').get_abspath()
 env['PRETEX']   = env.File('#/pretex/pretex.py').get_abspath()
+print(env['PRETEX'])
 
 build_dir = lambda sd='': os.path.join(env['BUILD_DIR'], sd)
 cache_dir = lambda sd='': os.path.join(env['CACHE_DIR'], sd)

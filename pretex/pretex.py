@@ -15,7 +15,6 @@ from subprocess import Popen
 
 PROCESSTEX = os.path.join(os.path.dirname(__file__), 'processtex.py')
 
-
 def chunks(l, n):
     "Yield successive n-sized chunks from l."
     for i in range(0, len(l), n):
